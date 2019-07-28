@@ -57,18 +57,8 @@
 
      setTimeout(function () {
          ai.classList.remove('ai-img-pressed');
-     }, 200);
+     }, 300);
  }
-
- //query DOM for each pick (NOT using these variables currently): 
- // const rock = document.querySelector('.rock-pic'); 
- // const rockButton = document.querySelector('.rock-key'); 
-
- // const paper = document.querySelector('.paper-pic');
- // const paperButton = document.querySelector('.paper-key');
-
- //  const scissors = document.querySelector('.scissors-pic');
- // const scissorsButton = document.querySelector('.scissors-key');
 
  //Adding Click Event Listeners to each pic: 
  const images = document.querySelectorAll('.pic');
