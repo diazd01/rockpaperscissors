@@ -57,7 +57,7 @@
 
      setTimeout(function () {
          ai.classList.remove('ai-img-pressed');
-     }, 300);
+     }, 200);
  }
 
  //query DOM for each pick (NOT using these variables currently): 
