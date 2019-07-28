@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RockPaperScissors</title>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FAVICON -->
+    <script src="https://kit.fontawesome.com/515c3045b3.js"></script>
+</head>
+
+<body>
+
+    <!--TITLE-->
+
+    <div class="title">
+        <h1 class = "header1">YOU VERSUS THE COMPUTER</h1>
+        <h2 class = "header2">CLICK YOUR PICK: </h2>
+    </div>
+
+    <!--GAME SECTION-->
+    <div class="human-container">
+
+        <!--ROCK SECTION-->
+        <div class="pick">
+            <img id = "rock" class="rock-pic pic" src="images/rock.png" alt="rock-picture">
+        </div>
+        <!--PAPER SECTION-->
+        <div class="pick">
+            <img id="paper" class="paper-pic pic" src="images/paper.png" alt="paper-picture">
+        </div>
+        <!--SCISSORS SECTION-->
+        <div class="pick">
+            <img id="scissors" class="scissors-pic pic" src="images/scissors.png" alt="scissors-picture">
+        </div>  
+
+    </div>
+
+    <!--KEYS-->
+    <div class = "keys">
+        <h2 class="key rock-key">or press R</h2>
+        <h2 class="key paper-key">or press P</h2>
+        <h2 class="key scissors-key">or press S</h2>
+    </div>
+
+    <!--AI SECTION-->
+    <div class="ai-container">
+        <div>
+            <h2 class="header2-ai">A.I PICKS...</h2>
+        </div>
+        <div class="aipick-image">
+            <img src="" alt="">
+        </div>
+        <div class="round-container">
+            <h2></h2>
+        </div>
+    </div>
+
+    <!--SCOREBOARD AND OUTCOME SECTION-->
+    <div class="final-section">
+
+        <div class="scoreboard">
+            <div class="human-brd">
+            <h3 class = "score1">Human:</h3> 
+            <h3 class = "score1 humanscore">0</h3> 
+            </div>
+            <div class="ai-brd">
+            <h3 class="score2">A.I: </h3>
+            <h3 class="score2 aiscore">0</h3>
+            </div>
+        </div>
+        <div class="outcome">
+            <h2></h2>
+        </div>
+        <div class="play-again">
+            <!-- <button></button> -->
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

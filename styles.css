@@ -1,0 +1,211 @@
+body {
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+
+.header1 {
+    display: flex;
+    font-size: 3.5rem;
+    font-family: 'Anton', sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2vh;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; 
+    padding-top: 15px; 
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+
+.header2-ai {
+    display: flex;
+    justify-content: left;
+    padding-left: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/*GAME SECTION CONTAINER*/
+.human-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 20vh;
+}
+
+/*THE IMAGES' CLASS*/
+.rock-pic,
+.scissors-pic,
+.paper-pic {
+    width: 135px;
+    border: 10px solid #3CB371;
+    border-radius: 30%;
+    background-color: white; 
+}
+
+
+/* CLASS for container containing each image and button for*/
+.pick {
+    display: flex;
+    flex: 1;
+    flex-basis: 33.3333333%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    transition: 0.3s ease; 
+}
+
+.pic:hover {
+    border-color: #FFD700;
+    transform: scale(1.1); 
+}
+/*AI SECTION*/
+.ai-container {
+    display: flex;
+    padding: 2% 5% 2% 16%;
+}
+
+.header2-ai {
+    order: 0;
+    margin-top: 55px;
+    padding: 0%; 
+}
+
+.ai-img {
+    order: 1;
+    width: 370px; 
+    border: 10px solid #FFFAF0;
+    border-radius: 20%;
+    margin-left: 50%; 
+    transition: 0.4s ease;
+}
+.ai-img-pressed { 
+    border-color: #DC143C;
+    transform: scale(1.1);
+}
+/*ROUND CONTAINER*/ 
+.round-container {
+    order: 2;
+    margin-left: 30%;
+    margin-top: 20px; 
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/*FINAL SECTION*/
+.final-section {
+    display: flex;
+    padding-top: 1px; 
+    justify-content: space-between; 
+}
+
+/*SCOREBOARD*/
+.scoreboard {
+    order: 1;
+    border: 5px rgb(6, 8, 7) solid;  
+    flex-wrap: wrap; 
+    width: 13%; 
+    margin: 0%; 
+}
+
+.human-brd {
+    display: flex; 
+    background-color: #00FA9A;
+}
+
+.score1{
+    margin: 20px; 
+}
+
+
+.ai-brd {
+    display: flex; 
+    background-color: #4682B4;
+}
+
+.score2 {
+    margin: 20px; 
+    color: white;
+}
+
+/*OUTCOME*/
+
+.outcome {
+    order: 2;
+}
+
+.outcome > h2 {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-size: 2.5rem;
+}
+/*PLAY AGAIN */ 
+.play-again {
+    order: 3;
+}
+.play-btn {
+     background-color: #32CD32;
+     border-radius: 50%;
+     border: 3.5px solid #3CB371;
+     color: white;
+     padding: 50px 20px;
+     text-align: center; 
+     display: inline-block;
+     font-size: 35px;
+     font-family: 'Anton', sans-serif;
+     margin-right: 100px; 
+}
+
+.play-btn:hover {
+    border-color: #00FFFF;
+    transform: scale(0.8);
+}
+.aiscore {
+    padding-left: 89px; 
+}
+
+/*RESPONSIVENESS*/
+@media(max-width: 768px) {
+
+    .human-container {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .pick {
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ai-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .final-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
