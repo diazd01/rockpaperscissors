@@ -174,7 +174,7 @@ h3 {
 }
 
 .play-btn:hover {
-    border-color: #00FFFF;
+    border-color: #FFFF00;
     transform: scale(0.8);
 }
 .aiscore {
