@@ -182,29 +182,40 @@ h3 {
 }
 
 /*RESPONSIVENESS*/
-@media(max-width: 768px) {
+@media(max-width: 1028px) {
 
-    .human-container {
+    .body {
+        background-color: #87CEFA; 
+         
+    }
+    .title {
         display: flex;
         flex-direction: column; 
+        justify-items: center; 
+        text-align: center; 
     }
 
-    .pick {
+    .human-container{
+        display: flex; 
+        flex-direction: column; 
+        justify-items: center;
     }
 
-    .buttons {
+    .keys {
         display: flex;
         flex-direction: column;
+        justify-items: center;
     }
-
     .ai-container {
         display: flex;
         flex-direction: column;
+        justify-items: center;
     }
 
     .final-section {
         display: flex;
         flex-direction: column;
+        justify-items: center;
     }
 
 
