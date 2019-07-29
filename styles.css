@@ -177,6 +177,12 @@ h3 {
     border-color: #FFFF00;
     transform: scale(0.8);
 }
+.play-btn:active {
+    background-color: #3CB371;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
 .aiscore {
     padding-left: 89px; 
 }
