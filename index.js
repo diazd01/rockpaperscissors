@@ -28,25 +28,27 @@
  let aiScore = +(document.querySelector('.aiscore').textContent);
 
  //FUNCTION that plays a single round:
- function oneRound(result) {
+function oneRound(pcSelect, playerSelect) {
 
-     let pcSelect = computerPlay();
-     let playerSelect = playerPick;
+    pcSelect = computerPlay();
+    playerSelect = playerPick;
 
-     if (pcSelect === playerSelect) {
-         roundResult.innerHTML = (`DRAW. <br> Human selected ${playerSelect}. <br> A.I selected ${pcSelect}.`);
-         return "draw";
-     } else if ((playerSelect === "rock" && pcSelect === "scissors") || (playerSelect === "paper" &&
-             pcSelect === "rock") || (playerSelect === "scissors" && pcSelect === "paper")) {
-         roundResult.innerHTML = (`YOU WIN. <br> Human selected: ${playerSelect}. <br> A.I selected: ${pcSelect}`);
-         document.querySelector('.humanscore').textContent = ++humanScore;
-         return "win";
-     } else {
-         roundResult.innerHTML = (`YOU LOSE. <br> Human selected ${playerSelect}. <br> A.I selected ${pcSelect}`)
-         document.querySelector('.aiscore').textContent = ++aiScore;
-         return "lose";
-     }
- }
+    if (pcSelect === playerSelect) {
+        roundResult.innerHTML = (`DRAW. <br> Human selected ${playerSelect}. <br> A.I selected ${pcSelect}.`);
+
+    } else if ((playerSelect === "rock" && pcSelect === "scissors") || (playerSelect === "paper" &&
+            pcSelect === "rock") || (playerSelect === "scissors" && pcSelect === "paper")) {
+        roundResult.innerHTML = (`YOU WIN. <br> Human selected: ${playerSelect}. <br> A.I selected: ${pcSelect}`);
+        //adding 1 in the scoreboard for humanscore if they win
+        document.querySelector('.humanscore').textContent = ++humanScore;
+
+    } else {
+        roundResult.innerHTML = (`YOU LOSE. <br> Human selected ${playerSelect}. <br> A.I selected ${pcSelect}`);
+        //adding 1 in the scoreboard for aiscore 
+        document.querySelector('.aiscore').textContent = ++aiScore;
+
+    }
+}
 
 
  //transitions: 
