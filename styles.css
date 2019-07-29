@@ -70,7 +70,7 @@ h3 {
 }
 
 .pic {
-    transition: 0.3s ease; 
+    transition: all 0.3s ease; 
 }
 
 .pic:hover {
@@ -175,7 +175,6 @@ h3 {
 
 .play-btn:hover {
     border-color: #FFFF00;
-    transform: scale(0.8);
 }
 .play-btn:active {
     background-color: #3CB371;
