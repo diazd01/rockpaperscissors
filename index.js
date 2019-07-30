@@ -8,13 +8,13 @@
      pick = array[Math.floor(Math.random() * array.length)];
      //adding picture:  
      if (pick === "rock") {
-         aiPick.src = "images/ai-rock1.jpg";
+         aiPick.src = "images/ai-rock.jpg";
          aiPick.classList.add("ai-img");
      } else if (pick === "paper") {
-         aiPick.src = "images/ai-paper1.jpg";
+         aiPick.src = "images/ai-paper.jpg";
          aiPick.classList.add("ai-img");
      } else {
-         aiPick.src = "images/ai-scissors1.jpg";
+         aiPick.src = "images/ai-scissors.jpg";
          aiPick.classList.add("ai-img");
      }
      return pick;
