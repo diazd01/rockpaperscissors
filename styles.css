@@ -16,8 +16,8 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem; 
-    padding-top: 15px; 
+    font-size: 2.5rem;
+    padding-top: 15px;
 }
 
 h3 {
@@ -38,7 +38,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*GAME SECTION CONTAINER*/
@@ -50,13 +50,11 @@ h3 {
 }
 
 /*THE IMAGES' CLASS*/
-.rock-pic,
-.scissors-pic,
-.paper-pic {
+.rock-pic, .paper-pic, .scissors-pic {
     width: 135px;
     border: 10px solid #3CB371;
     border-radius: 30%;
-    background-color: white; 
+    background-color: white;
 }
 
 
@@ -70,13 +68,14 @@ h3 {
 }
 
 .pic {
-    transition: all 0.3s ease; 
+    transition: 0.1s ease;
 }
 
 .pic:hover {
     border-color: #FFD700;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
+
 /*AI SECTION*/
 .ai-container {
     display: flex;
@@ -86,65 +85,72 @@ h3 {
 .header2-ai {
     order: 0;
     margin-top: 55px;
-    padding: 0%; 
+    padding: 0%;
 }
 
 .ai-img {
     order: 1;
-    width: 370px; 
+    width: 370px;
     border: 10px solid #FFFAF0;
     border-radius: 20%;
-    margin-left: 50%; 
+    margin-left: 50%;
     transition: all 0.2s ease;
 }
-.ai-img-pressed { 
+
+.ai-img-pressed {
     border-color: #DC143C;
     transform: scale(1.1);
 }
-/*ROUND CONTAINER*/ 
+
+/*ROUND CONTAINER*/
 .round-container {
     order: 2;
     margin-left: 30%;
-    margin-top: 20px; 
+    margin-top: 20px;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
 }
+
 /*FINAL SECTION*/
 .final-section {
     display: flex;
-    padding-top: 1px; 
-    justify-content: space-between; 
+    padding-top: 1px;
+    justify-content: space-between;
 }
 
 /*SCOREBOARD*/
 .scoreboard {
     order: 1;
-    border: 5px rgb(6, 8, 7) solid;  
-    flex-wrap: wrap; 
-    width: 240px;  
-    margin: 0%; 
+    border: 5px rgb(6, 8, 7) solid;
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 0%;
 }
 
 .human-brd {
-    display: flex; 
+    display: flex;
     background-color: #00FA9A;
 }
 
-.score1{
-    margin: 20px; 
+.score1,
+.humanscore {
+    margin: 20px;
 }
 
 
 .ai-brd {
-    display: flex; 
+    display: flex;
     background-color: #4682B4;
 }
 
-.score2 {
-    margin: 18px; 
+.score2,
+.aiscore {
+    margin: 18px;
     color: white;
 }
-
+.aiscore {
+    padding-left: 89px;
+}
 /*OUTCOME*/
 
 .outcome {
@@ -153,56 +159,92 @@ h3 {
 
 .outcome > h2 {
     font-family: 'Montserrat',
-    sans-serif;
+        sans-serif;
     font-size: 2.5rem;
 }
-/*PLAY AGAIN */ 
+
+/*PLAY AGAIN */
 .play-again {
     order: 3;
 }
+
 .play-btn {
-     background-color: #32CD32;
-     border-radius: 50%;
-     border: 3.5px solid #3CB371;
-     color: white;
-     padding: 50px 20px;
-     text-align: center; 
-     display: inline-block;
-     font-size: 35px;
-     font-family: 'Anton', sans-serif;
-     margin-right: 100px; 
+    background-color: #32CD32;
+    border-radius: 50%;
+    border: 3.5px solid #3CB371;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+    margin-right: 100px;
 }
 
 .play-btn:hover {
     border-color: #FFFF00;
 }
+
 .play-btn:active {
     background-color: #3CB371;
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    transform: translateY(5px);
 
 }
-.aiscore {
-    padding-left: 89px; 
-}
 
-/*RESPONSIVENESS (still in progress)*/
+
+
+/*RESPONSIVENESS*/
 @media(max-width: 1028px) {
 
-    .body {
-        background-color: #87CEFA; 
-         
-    }
+    /* .body {
+
+    } */
+
     .title {
         display: flex;
-        flex-direction: column; 
-        justify-items: center; 
-        text-align: center; 
+        flex-direction: column;
+        justify-items: center;
+        
     }
 
-    .human-container{
-        display: flex; 
-        flex-direction: column; 
+    .keys, .key {
+        display: none; 
+    }
+
+    .rock-pic,
+    .paper-pic,
+    .scissors-pic {
+        width: 100px; 
+        margin: 0px; 
+        padding: 0px; 
+        border: 5px solid #3CB371;
+    }
+    .header1 {
+        font-size: 2.5rem;
+        font-family: 'Anton', sans-serif;
+        justify-content: center;
+        margin-top: 5px; 
+        margin-bottom: 0px; 
+    }
+
+    .header2 {
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        margin: 0px; 
+    }
+    .header2-ai {
+        order: 0;
+        margin-top: 0px; 
+        margin-bottom: 15px;
+        font-size: 2rem; 
+        justify-content: center; 
+
+    }
+    .human-container {
+        display: flex;
+        flex-direction: column;
         justify-items: center;
     }
 
@@ -211,17 +253,105 @@ h3 {
         flex-direction: column;
         justify-items: center;
     }
+
     .ai-container {
         display: flex;
         flex-direction: column;
         justify-items: center;
     }
 
+    .ai-img {
+        width: 200px;
+        border: 5px solid #FFFAF0;
+        border-radius: 20%;
+        transition: 0.2s ease;
+        margin: 0px; 
+        justify-content: center;
+    }
+    .ai-img-pressed {
+        border-color: #DC143C;
+        transform: scale(1.1);
+    }
+    .round-container {
+        display: flex; 
+    }
+    .round-container > h2 {
+        justify-content: center;    
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+    }
     .final-section {
         display: flex;
         flex-direction: column;
         justify-items: center;
     }
+    .scoreboard {
+        border: 2px rgb(6, 8, 7) solid;
+        flex-wrap: wrap;
+        width: 180px;
+        margin: 0%;
+        
+    }
+    .human-brd {
+        display: flex;
+        background-color: #00FA9A;
+    }
+
+    .score1,
+    .humanscore {
+        margin: 20px;
+        font-size: 1.5rem;
+    }
 
 
+    .ai-brd {
+        display: flex;
+        background-color: #4682B4;
+    }
+
+    .score2,
+    .aiscore {
+        margin: 10px;
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 15px;
+        padding-bottom: 5px; 
+    }
+
+    .aiscore {
+        padding-left: 89px;
+    }
+
+    /*OUTCOME*/
+
+    .outcome > h2 {
+        font-family: 'Montserrat',
+            sans-serif;
+        font-size: 1rem;
+    }
+
+    /*PLAY AGAIN */
+    
+    .play-btn {
+        background-color: #32CD32;
+        border-radius: 50%;
+        border: 1.5px solid #3CB371;
+        color: white;
+        padding: 30px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .play-btn:hover {
+        border-color: #FFFF00;
+    }
+
+    .play-btn:active {
+        background-color: #3CB371;
+        box-shadow: 0 5px #666;
+        transform: translateY(5px);
+
+    }
 }
