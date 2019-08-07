@@ -1,2 +1,2 @@
 # rockpaperscissors
-simple rockpaperscissors game
+"Rock, paper, scissors" game with a GUI
